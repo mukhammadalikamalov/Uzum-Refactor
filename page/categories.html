@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/Uzum-Refactor/index.html">
+	<link rel="stylesheet" href="https://michalsnik.github.io/aos/">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Document</title>
+	<style>
+		.price {
+			background-color: rgb(255, 255, 0);
+			border-radius: 5px;
+		}
+	</style>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header></header>
+
+	<div class="container mx-auto py-8 gap-8 max-w-screen-xl">
+		<!---- Telefonlar ---->
+		<img src="" alt="">
+		<div data-aos="zoom-in-left" class="box-categories grid-cols-2 gap-8 mt-4">
+			<h1 class="title-products text-2xl font-semibold">Telefonlar</h1>
+			<div class="mt-4 product_blocks grid grid-cols-5 gap-4" id="for_phones"></div>
+		</div>
+
+		<!---- Televizorlar ---->
+		<img src="" alt="">
+		<div data-aos="zoom-in-left" class="box-categories  md:grid-cols-2 gap-8 mt-4">
+			<h1 class="title-products text-2xl font-semibold">Televizorlar</h1>
+			<div class="product_blocks mt-4 grid grid-cols-5 gap-4" id="for_tv"></div>
+		</div>
+
+		<!---- Oyoq kiyimlar ---->
+		<img src="" alt="">
+		<div data-aos="zoom-in-left" class="box-categories  md:grid-cols-2 gap-8 mt-4">
+			<h1 class="title-products text-2xl font-semibold">Oyoq kiyimlar</h1>
+			<div class="product_blocks mt-4 grid grid-cols-5 gap-4" id="for_shoes"></div>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			AOS.init({
+				duration: 800,
+			});
+		});
+	</script>
+
+	<script src="/Uzum-Refactor/js/categories.js"></script>
+	<script src="/Uzum-Refactor/components/header.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
