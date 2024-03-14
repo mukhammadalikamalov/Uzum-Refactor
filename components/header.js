@@ -118,7 +118,7 @@ header.innerHTML = ` <nav class="h-9  bg-slate-100 w-full pt-1">
     </div>
 </div>
 <div class="mt-3">
-    <ul id="links" class="flex gap-4">
+    <ul id="links" class="flex gap-2">
         <img class="w-5 h-5" src="https://static.uzum.uz/nasiya/union.png" alt="">
         <a class="ml-1" href="">Muddatli tolov</a>
         <img class="w-5 h-5 ml-6" src="https://static.uzum.uz/fast_categories/new_sale_2023.png" alt="">
