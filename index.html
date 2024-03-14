@@ -119,7 +119,7 @@
                 border: none;
             }
 
-            #btn {
+            #toggleButton {
                 border-radius: 8px;
                 width: 58%;
                 justify-content: center;
@@ -130,7 +130,7 @@
                 height: 56px;
             }
 
-            #btn:hover {
+            #toggleButton:hover {
                 background-color: #E6E8ED;
             }
 
@@ -242,6 +242,21 @@
                 text-decoration: none;
             }
 
+            .swiper-container {
+                padding: 0;
+                /* Remove any padding around the Swiper container */
+                margin: 0;
+                /* Remove any margin around the Swiper container */
+            }
+
+            .swiper-slide {
+                margin: 0;
+                /* Remove margin on individual Swiper slides */
+                padding: 0;
+                /* Remove padding on individual Swiper slides */
+            }
+
+
             .playstore-button:hover {
                 background-color: transparent;
                 color: rgba(0, 0, 0, 1);
@@ -302,9 +317,39 @@
                 color: orange;
             }
 
+            .relative:hover .hidden {
+                display: block;
+            }
+
             @import 'tailwindcss/base';
             @import 'tailwindcss/components';
             @import 'tailwindcss/utilities';
+
+            .media-header img {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media screen and (max-width: 958px) {
+
+                .top-nav,
+                .header-content,
+                .pages {
+                    display: none;
+                }
+
+                .media-header {
+                    display: block;
+                }
+            }
+
+            .banner[data-v-48f9edf8] {
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                height: 48px;
+                width: 100%;
+            }
         </style>
         <script>
             tailwind.config = {

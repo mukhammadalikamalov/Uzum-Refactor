@@ -24,7 +24,7 @@ header.innerHTML = ` <nav class="h-9  bg-slate-100 w-full pt-1">
 <header class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
 <div class="w-full h-16 bg-white max-w-screen-xl flex flex-wrap items-center mx-auto">
     <a href="./index.html">
-        <img src="logos/Picsart_24-02-29_11-26-12-300.png" alt="">
+        <img src="/Uzum-Refactor/logos/Picsart_24-02-29_11-26-12-300.png" alt="">
     </a>
     <button class="w-32 h-10 bg-violet-100 ml-6 rounded text-violet-600">
         <span class="icon-[ant-design--shopping-outlined]"></span> Katalog
