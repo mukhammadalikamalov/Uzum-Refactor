@@ -1,6 +1,6 @@
 let categories = [
-	{
-		id: Math.random(),
+    {
+        id: Math.random(),
         name: "Smartfon Samsung Galaxy S24 Ultra (Official), 256/512GB Dynamic AMOLED 2X, 120 H",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -10,9 +10,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cno0ullbl7rtgkb9vicg/original.jpg"],
         category: 1,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Smartfon Apple iPhone 13 128 GB 6.1 OLED, IP68, 5G,",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -22,9 +22,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cmst4ths99ouqbfskm70/original.jpg"],
         category: 1,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Smartfon Apple iPhone 13 128 GB 6.1 OLED, IP68, 5G",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -34,9 +34,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cmst023ifoubkc6q22jg/original.jpg"],
         category: 1,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Smartfon Apple iPhone 13 128 GB 6.1 OLED, IP68, 5G",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -46,21 +46,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cmst6t1s99ouqbfskmn0/original.jpg"],
         category: 1,
-	},
-	{
-		id: Math.random(),
-        name: "Smartfon Samsung Galaxy A05s 4 GB RAM, 128 GB, 90 Hz, 50 MP, Snapdragon 680 4G",
-        description: "5.0 (43 sharh)",
-        price: "47 880 so'm/oyiga",
-        realprice: "598 000 so'm",
-        sale: "399 000 so'm",
-        isFavorite: false,
-        isInCart: true,
-        images: ["https://images.uzum.uz/cnn9rttbl7rtgkb9q9tg/original.jpg"],
-        category: 1,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Televizor Li TV 32 Smart TV, HD IPS, sovg'a sifatida Allplay-ga tekin obuna",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -70,9 +58,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cm6s9o9s99ouqbfp3hn0/original.jpg"],
         category: 2,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Televizor QLT SmartTV 32, 43, 55 HD/Full HD/4K UHD",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -82,9 +70,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cno13mcu2hhlb05hln7g/original.jpg"],
         category: 2,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Smart televizor WellStars 43-75, ovozli qidiruv pulti",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -94,9 +82,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cmjnpv1s99ouqbfqugeg/original.jpg"],
         category: 2,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Televizor LiTV 32 Smart TV, sovg'a sifatida televizor uchun kronshteyn va Allplayga obuna",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -106,21 +94,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cm6s91rifoubkc6mh2s0/original.jpg"],
         category: 2,
-	},
-	{
-		id: Math.random(),
-        name: "Aqlli televizor TCL 43 S5400A Full HD, Smart TV",
-        description: "5.0 (43 sharh)",
-        price: "47 880 so'm/oyiga",
-        realprice: "598 000 so'm",
-        sale: "399 000 so'm",
-        isFavorite: false,
-        isInCart: true,
-        images: ["https://images.uzum.uz/cleq6lfn7c6qm23jthlg/original.jpg"],
-        category: 2,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Krossovkalar erkaklar uchun, sport poyabzali",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -130,9 +106,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cmjtjgp25ku8ad8hpj80/original.jpg"],
         category: 3,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Erkaklar uchun shippaklar",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -142,9 +118,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/ci3c95bltlh4bk4lgc4g/original.jpg"],
         category: 3,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Erkaklar krossovkasi",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -154,9 +130,9 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cloqutl6sfhsc0unljj0/original.jpg"],
         category: 3,
-	},
-	{
-		id: Math.random(),
+    },
+    {
+        id: Math.random(),
         name: "Erkaklar uchun krossovkalar, 40-45 o'lchami",
         description: "5.0 (43 sharh)",
         price: "47 880 so'm/oyiga",
@@ -166,28 +142,16 @@ let categories = [
         isInCart: true,
         images: ["https://images.uzum.uz/cl1qrhdennt861io8s7g/original.jpg"],
         category: 3,
-	},
-	{
-		id: Math.random(),
-        name: "Krossovkalar erkaklar uchun, sport poyabzali",
-        description: "5.0 (43 sharh)",
-        price: "47 880 so'm/oyiga",
-        realprice: "598 000 so'm",
-        sale: "399 000 so'm",
-        isFavorite: false,
-        isInCart: true,
-        images: ["https://images.uzum.uz/cmd9fv9s99ouqbfprc50/original.jpg"],
-        category: 3,
-	},
+    },
 ];
 
 function displayProductsByCategory(category, containerId) {
-	let container = document.getElementById(containerId)
-	let productsHtml = "";
+    let container = document.getElementById(containerId)
+    let productsHtml = "";
 
-	categories.forEach((c) => {
-		if (c.category === category) {
-			productsHtml += `
+    categories.forEach((c) => {
+        if (c.category === category) {
+            productsHtml += `
 			<div class="max-w-screen-xl">
 			<img src="${c.images}" alt="">
 			<h3>${c.name}</h3>
@@ -206,10 +170,10 @@ function displayProductsByCategory(category, containerId) {
 		</div>
 			</div>
 			`
-		}
-	});
+        }
+    });
 
-	container.innerHTML = productsHtml;
+    container.innerHTML = productsHtml;
 }
 
 displayProductsByCategory(1, "for_phones");
