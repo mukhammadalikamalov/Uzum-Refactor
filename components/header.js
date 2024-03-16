@@ -26,9 +26,10 @@ header.innerHTML = ` <nav class="h-9  bg-slate-100 w-full pt-1">
     <a href="./index.html">
         <img src="/Uzum-Refactor/logos/Picsart_24-02-29_11-26-12-300.png" alt="">
     </a>
-    <button class="w-32 h-10 bg-violet-100 ml-6 rounded text-violet-600">
-        <span class="icon-[ant-design--shopping-outlined]"></span> Katalog
-    </button>
+    <a href="/Uzum-Refactor/page/categories.html"><button class="w-32 h-10 bg-violet-100 ml-6 rounded text-violet-600">
+    <span class="icon-[ant-design--shopping-outlined]"></span> Katalog
+</button>
+					</a>
     <div id="search" class="max-w-lg mx-auto">
         <div class="search rounded-[5px] flex w-full flex-wrap">
             <input id="searchInput" type="search"

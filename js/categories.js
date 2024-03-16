@@ -154,7 +154,7 @@ function displayProductsByCategory(category, containerId) {
             productsHtml += `
 			<div class="max-w-screen-xl">
 			<img src="${c.images}" alt="">
-			<h3>${c.name}</h3>
+            <h2 class="text-sm text-gray-700">${c.name}</h2>
 			<p>${c.description}</p>
 			<mark class="text-[11px]">${c.price}</mark>
 		<p class="mt-6 line-through text-xs text-slate-400">${c.realprice}</p>
