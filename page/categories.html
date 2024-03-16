@@ -32,7 +32,7 @@
 	<header></header>
 
 	<!-- component -->
-	<section class="bg-white dark:bg-gray-900">
+	<section class="bg-white dark:bg-gray-900 sticky">
 		<div class="container px-6 py-8 mx-auto">
 			<div class="lg:flex lg:-mx-0">
 				<div class="space-y-3 lg:w-1.9/5 lg:px-2 lg:space-y-4 ml-24">
@@ -84,153 +84,54 @@
 					<a href="#" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline">Soatlar va
 						elektron budilniklar
 					</a>
-					<ul data-test-id="block__filter-wrapper" class="filter-wrapper">
-						<li>
-							<div class="filter range-filter">
-								<div class="title-wrapper title-wrapper--range"><span data-test-id="text__filter-name"
-										class="slightly transparent hug title-text">
-										Narx, baho, so'm
-									</span> <!----> <!----> <!----></div>
-								<div class="range-filter-wrapper">
-									<div class="range-controls">
-										<div class="range-field">
-											<div input-form-group="">
-												<div class="range-filter-prefix">
-													dan
-												</div> <!---->
-												<div express="" data-test-id="text__input-validation-error" class="">
-													<!----> <!----> <input id="input-text15101" ui-input=""
-														type="number" max="22950000" placeholder="1000"
-														data-test-id="input__min-price" class=""
-														style="text-indent: 38px;">
-													<div id="tooltip" class=""><!----> <!----></div>
-												</div>
-											</div>
-											<div input-form-group="">
-												<div class="range-filter-prefix">
-													oldin
-												</div> <!---->
-												<div express="" data-test-id="text__input-validation-error" class="">
-													<!----> <!----> <input id="input-text15103" ui-input=""
-														type="number" max="22950000" placeholder="22950000"
-														data-test-id="input__max-price" class=""
-														style="text-indent: 42px;">
-													<div id="tooltip" class=""><!----> <!----></div>
-												</div>
-											</div>
-										</div>
-										<div class="range-line">
-											<div class="range-spector">
-												<div class="range-spector__selected" style="left: 0px; right: 0px;">
-													<div class="draggable-button draggable-button--left"></div>
-													<div class="draggable-button draggable-button--right"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+					<div>
+						<h1>Rang</h1>
+						<div class="mt-3">
+							<div class="h-6 w-6 bg-red-500 rounded-full">
+								<h1 class="ml-10">Qizil</h1>
 							</div>
-						</li>
-						<li>
-							<div class="filter sku-filter sku-filter--desktop" data-test-id="block__filter">
-								<div class="title-wrapper"><span data-test-id="text__filter-name"
-										class="slightly transparent hug title-text">
-										Rang
-									</span> <!----> <!----> <!----></div>
-								<div class="shadow-wrapper"><!---->
-									<ul class="filter-options">
-										<li class="filter-options__parameter"><label class="filter-checkbox is-circle"
-												data-test-id="checkbox__filter">
-												<div id="filter-indicator" class="filter-indicator"><img
-														src="https://image-cdn.kazanexpress.ru/static/filter_icon/color/brown.png"
-														alt="Jigarrang" class="background-image"> <label
-														data-v-c60ac15e="" class="ui-component ui-checkbox"><span
-															data-v-c60ac15e="" class="ui-checkbox--indicator"></span>
-														<span data-v-c60ac15e="" class="ui-checkbox--label"></span>
-														<input data-v-c60ac15e="" type="checkbox"
-															aria-hidden="true"></label></div>
-												<div class="filter-checkbox--label">
-													Jigarrang
-												</div>
-											</label></li>
-										<li class="filter-options__parameter"><label class="filter-checkbox is-circle"
-												data-test-id="checkbox__filter">
-												<div id="filter-indicator" class="filter-indicator"><img
-														src="https://image-cdn.kazanexpress.ru/static/filter_icon/color/red.png"
-														alt="Qizil" class="background-image"> <label data-v-c60ac15e=""
-														class="ui-component ui-checkbox"><span data-v-c60ac15e=""
-															class="ui-checkbox--indicator"></span> <span
-															data-v-c60ac15e="" class="ui-checkbox--label"></span> <input
-															data-v-c60ac15e="" type="checkbox"
-															aria-hidden="true"></label></div>
-												<div class="filter-checkbox--label">
-													Qizil
-												</div>
-											</label></li>
-										<li class="filter-options__parameter"><label class="filter-checkbox is-circle"
-												data-test-id="checkbox__filter">
-												<div id="filter-indicator" class="filter-indicator"><img
-														src="https://image-cdn.kazanexpress.ru/static/filter_icon/color/green.png"
-														alt="Yashil" class="background-image"> <label data-v-c60ac15e=""
-														class="ui-component ui-checkbox"><span data-v-c60ac15e=""
-															class="ui-checkbox--indicator"></span> <span
-															data-v-c60ac15e="" class="ui-checkbox--label"></span> <input
-															data-v-c60ac15e="" type="checkbox"
-															aria-hidden="true"></label></div>
-												<div class="filter-checkbox--label">
-													Yashil
-												</div>
-											</label></li>
-										<li class="filter-options__parameter"><label class="filter-checkbox is-circle"
-												data-test-id="checkbox__filter">
-												<div id="filter-indicator" class="filter-indicator"><img
-														src="https://image-cdn.kazanexpress.ru/static/filter_icon/color/khaki.png"
-														alt="Xaki" class="background-image"> <label data-v-c60ac15e=""
-														class="ui-component ui-checkbox"><span data-v-c60ac15e=""
-															class="ui-checkbox--indicator"></span> <span
-															data-v-c60ac15e="" class="ui-checkbox--label"></span> <input
-															data-v-c60ac15e="" type="checkbox"
-															aria-hidden="true"></label></div>
-												<div class="filter-checkbox--label">
-													Xaki
-												</div>
-											</label></li>
-										<li class="filter-options__parameter"><label class="filter-checkbox is-circle"
-												data-test-id="checkbox__filter">
-												<div id="filter-indicator" class="filter-indicator"><img
-														src="https://image-cdn.kazanexpress.ru/static/filter_icon/color/violet.png"
-														alt="Binafsharang" class="background-image"> <label
-														data-v-c60ac15e="" class="ui-component ui-checkbox"><span
-															data-v-c60ac15e="" class="ui-checkbox--indicator"></span>
-														<span data-v-c60ac15e="" class="ui-checkbox--label"></span>
-														<input data-v-c60ac15e="" type="checkbox"
-															aria-hidden="true"></label></div>
-												<div class="filter-checkbox--label">
-													Binafsharang
-												</div>
-											</label></li>
-										<li class="filter-options__parameter"><label class="filter-checkbox is-circle"
-												data-test-id="checkbox__filter">
-												<div id="filter-indicator" class="filter-indicator"><img
-														src="https://image-cdn.kazanexpress.ru/static/filter_icon/color/pink.png"
-														alt="Pushti" class="background-image"> <label data-v-c60ac15e=""
-														class="ui-component ui-checkbox"><span data-v-c60ac15e=""
-															class="ui-checkbox--indicator"></span> <span
-															data-v-c60ac15e="" class="ui-checkbox--label"></span> <input
-															data-v-c60ac15e="" type="checkbox"
-															aria-hidden="true"></label></div>
-												<div class="filter-checkbox--label">
-													Pushti
-												</div>
-											</label></li>
-									</ul> <!---->
-								</div>
-								<div class="show-more"><span data-test-id="button__show-more">
-										Yana 16
-									</span></div>
+							<div class="h-6 w-6 mt-3 bg-green-500 rounded-full">
+								<h1 class="ml-10">Yashil</h1>
 							</div>
-						</li>
-					</ul>
+							<div class="h-6 w-6 mt-3 bg-black rounded-full">
+								<h1 class="ml-10">Qora</h1>
+							</div>
+							<div class="h-6 w-6 mt-3 bg-blue-500 rounded-full">
+								<h1 class="ml-10">Ko'k</h1>
+							</div>
+							<div class="h-6 w-6 mt-3 bg-yellow-500 rounded-full">
+								<h1 class="ml-10">Sariq</h1>
+							</div>
+							<div class="h-6 w-6 mt-3 bg-violet-500 rounded-full">
+								<h1 class="ml-10">Pushti</h1>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h1 class="mt-2">Brend</h1>
+						<div class="mt-4">
+							<div class="flex gap-4">
+								<input type="checkbox">
+								<h1>Green lion</h1>
+							</div>
+							<div class="flex gap-4 mt-3 ">
+								<input type="checkbox">
+								<h1>Green lion</h1>
+							</div>
+							<div class="flex gap-4 mt-3 ">
+								<input type="checkbox">
+								<h1>Green lion</h1>
+							</div>
+							<div class="flex gap-4 mt-3 ">
+								<input type="checkbox">
+								<h1>Green lion</h1>
+							</div>
+							<div class="flex gap-4 mt-3 ">
+								<input type="checkbox">
+								<h1>Green lion</h1>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div style="margin-left: 0px;" class="container mx-auto py-8 gap-8 max-w-screen-xl lg:-mx-48">
 					<h1 style="font-size: 23px; font-weight: 600;">Barcha Toifalar</h1>

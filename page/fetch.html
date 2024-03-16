@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<style>
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+	</style>
+
+	<div class="container">
+		<div id="photo-list"></div>
+		<div id="pagination"></div>
+	</div>
+
+	<script>
+		const main = document.getElementById("photo-list");
+		const paginationSection = document.getElementById("pagination");
+		const API_URL = "https://jsonplaceholder.typicode.com/photos";
+		const photosPerPage = 10; // Number of photos to display per page
+		let photosData = [];
+
+		async function getPhotos(url) {
+			const res = await fetch(url);
+			const data = await res.json();
+			photosData = data;
+			renderPage(1); // Display the first page on load
+		}
+
+		function renderPhotos(photos) {
+			main.innerHTML = '';
+			photos.forEach((photo) => {
+				const { title, url, thumbnailUrl } = photo;
+				const photoEl = document.createElement("div");
+				photoEl.classList.add("photo");
+				photoEl.innerHTML = `
+          <h3>${title}</h3>
+          <img src="${url}" alt="${title}">
+          <img src="${thumbnailUrl}" alt="Thumbnail">`
+					;
+				main.appendChild(photoEl);
+			});
+		}
+
+		function renderPage(pageNumber) {
+			const startIdx = (pageNumber - 1) * photosPerPage;
+			const endIdx = startIdx + photosPerPage;
+			const photosToDisplay = photosData.slice(startIdx, endIdx);
+			renderPhotos(photosToDisplay);
+		}
+
+		// Create pagination buttons
+		const totalButtons = 100; // Total number of pagination buttons
+		for (let i = 1; i <= totalButtons; i++) {
+			const button = document.createElement('button');
+			button.innerText = i;
+			button.addEventListener('click', () => {
+				renderPage(i);
+			});
+			paginationSection.appendChild(button);
+		}
+
+		getPhotos(API_URL);
+	</script>
+</body>
+
+</html>
