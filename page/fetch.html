@@ -4,70 +4,129 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-
-<body>
+	<title>Product Display</title>
 	<style>
 		.container {
 			max-width: 1200px;
 			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.product {
+			width: 300px;
+			margin: 20px;
+			padding: 15px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.product img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 5px;
+		}
+
+		.product h3 {
+			margin-top: 0;
+		}
+
+		.product p {
+			font-size: 18px;
+			color: #333;
+		}
+
+		#pagination {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+		}
+
+		#pagination button {
+			margin: 0 5px;
+			padding: 5px 10px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#pagination button:hover {
+			background-color: #0056b3;
 		}
 	</style>
+</head>
 
-	<div class="container">
-		<div id="photo-list"></div>
-		<div id="pagination"></div>
-	</div>
+<body>
+
+	<div class="container" id="photo-list"></div>
+	<div id="pagination"></div>
 
 	<script>
 		const main = document.getElementById("photo-list");
 		const paginationSection = document.getElementById("pagination");
-		const API_URL = "https://jsonplaceholder.typicode.com/photos";
-		const photosPerPage = 10; // Number of photos to display per page
-		let photosData = [];
+		const API_URL = "https://fakestoreapi.com/products";
+		const photosPerPage = 10; // Number of products to display per page
+		let productsData = [];
+		let currentPage = 1;
 
-		async function getPhotos(url) {
-			const res = await fetch(url);
-			const data = await res.json();
-			photosData = data;
-			renderPage(1); // Display the first page on load
+		async function getProducts(url) {
+			try {
+				const res = await fetch(url);
+				const data = await res.json();
+				productsData = data;
+				renderPage(currentPage); // Display the first page on load
+				renderPagination();
+			} catch (error) {
+				console.error("Error fetching products:", error);
+			}
 		}
 
-		function renderPhotos(photos) {
+		function renderProducts(products) {
 			main.innerHTML = '';
-			photos.forEach((photo) => {
-				const { title, url, thumbnailUrl } = photo;
-				const photoEl = document.createElement("div");
-				photoEl.classList.add("photo");
-				photoEl.innerHTML = `
-          <h3>${title}</h3>
-          <img src="${url}" alt="${title}">
-          <img src="${thumbnailUrl}" alt="Thumbnail">`
-					;
-				main.appendChild(photoEl);
+			products.forEach((product) => {
+				const { title, image, price } = product;
+				const productEl = document.createElement("div");
+				productEl.classList.add("product");
+				productEl.innerHTML = `
+            <h3>${title}</h3>
+            <img src="${image}" alt="${title}">
+            <p>Price: $${price.toFixed(2)}</p>`;
+				main.appendChild(productEl);
 			});
 		}
 
 		function renderPage(pageNumber) {
 			const startIdx = (pageNumber - 1) * photosPerPage;
 			const endIdx = startIdx + photosPerPage;
-			const photosToDisplay = photosData.slice(startIdx, endIdx);
-			renderPhotos(photosToDisplay);
+			const productsToDisplay = productsData.slice(startIdx, endIdx);
+			renderProducts(productsToDisplay);
 		}
 
-		// Create pagination buttons
-		const totalButtons = 100; // Total number of pagination buttons
-		for (let i = 1; i <= totalButtons; i++) {
-			const button = document.createElement('button');
-			button.innerText = i;
-			button.addEventListener('click', () => {
-				renderPage(i);
-			});
-			paginationSection.appendChild(button);
+		function renderPagination() {
+			const totalProducts = productsData.length;
+			const totalPages = Math.ceil(totalProducts / photosPerPage);
+
+			// Clear previous pagination buttons
+			paginationSection.innerHTML = '';
+
+			// Create pagination buttons
+			for (let i = 1; i <= totalPages; i++) {
+				const button = document.createElement('button');
+				button.innerText = i;
+				button.addEventListener('click', () => {
+					currentPage = i;
+					renderPage(currentPage);
+				});
+				paginationSection.appendChild(button);
+			}
 		}
 
-		getPhotos(API_URL);
+		getProducts(API_URL);
 	</script>
 </body>
 
